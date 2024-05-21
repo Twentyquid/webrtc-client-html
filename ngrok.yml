@@ -1,0 +1,12 @@
+version: 2
+authtoken: 2YdgnjAe578dQ3kHy5fZs3szYcC_2CTgQSWifGTaP3797tKKu
+tunnels:
+  first:
+    proto: http
+    addr: 5173
+  second:
+    proto: http
+    addr: 5500
+  third:
+    proto: tcp
+    addr: 5001

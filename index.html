@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web rtc client</title>
+  </head>
+  <body>
+    <div>
+      <h1>App</h1>
+      <button id="startButton">call</button>
+      <div id="hangupButton"></div>
+      <video playsinline muted autoplay id="localVideo" src=""></video>
+      <video playsinline muted autoplay id="remoteVideo" src=""></video>
+      <div>
+        <h3>offer is:</h3>
+        <textarea name="" id="offerOutput"></textarea>
+        <h3>Input offer</h3>
+        <input id="offerInput" type="text" />
+        <button id="offerSubmit">submit offer</button>
+        <h3>answer is:</h3>
+        <textarea name="" id="answerOutput"></textarea>
+        <h3>Input answer</h3>
+        <input id="answerInput" type="text" />
+        <button id="answerSubmit">submit answer</button>
+      </div>
+    </div>
+    <script src="./socket.io.esm.min.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./test.js"></script>
+  </body>
+</html>
